@@ -5869,6 +5869,7 @@ in
   pharo-vms = callPackage_i686 ../development/pharo/vm { };
   pharo-vm  = pharo-vms.pharo-no-spur;
   pharo-vm5 = pharo-vms.pharo-spur;
+  pharo-image = callPackage ../development/pharo/image { };
 
   pharo-launcher = callPackage ../development/pharo/launcher { };
 
