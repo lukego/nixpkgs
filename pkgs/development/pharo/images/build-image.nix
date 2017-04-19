@@ -53,5 +53,13 @@ stdenv.mkDerivation rec {
      xvfb-run timeout 3 $out/bin/${executable-name}
      test "$?" == 124 && echo -e "OK.")
   '';
+
+  meta = {
+    description = "Launcher Pharo image: ${image-name}";
+    longDescription = ''
+      This package provides the script ${image-name} to start a Pharo
+      virtual machine running the eponymous image.
+    '';
+  };
 }
 
