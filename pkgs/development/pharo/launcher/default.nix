@@ -1,10 +1,10 @@
 { stdenv, fetchurl, bash, pharo-vm, unzip, makeDesktopItem }:
 
 stdenv.mkDerivation rec {
-  version = "stable-2017.02.28";
+  version = "2017.02.28";
   name = "pharo-launcher-${version}";
   src = fetchurl {
-    url = "http://files.pharo.org/platform/launcher/PharoLauncher-user-${version}.zip";
+    url = "http://files.pharo.org/platform/launcher/PharoLauncher-user-stable-${version}.zip";
     sha256 = "1hfwjyx0c47s6ivc1zr2sf5mk1xw2zspsv0ns8mj3kcaglzqwiq0";
   };
 
@@ -77,7 +77,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = http://pharo.org;
     license = stdenv.lib.licenses.mit;
-    maintainers = [ stdenv.lib.maintainers.lukego ];
+    maintainers = [ ];
     platforms = pharo-vm.meta.platforms;
   };
 }

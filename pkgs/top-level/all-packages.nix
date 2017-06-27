@@ -6383,12 +6383,8 @@ with pkgs;
 
   guile-xcb = callPackage ../development/guile-modules/guile-xcb { };
 
-  pharo-vm = (callPackage ../development/pharo { }).vm;
-  pharo6   = (callPackage ../development/pharo { }).pharo6;
-  pharo6_64 = (callPackage ../development/pharo { }).pharo6_64;
-  pharo5    = (callPackage ../development/pharo { }).pharo5;
-  moose61 = (callPackage ../development/pharo { }).moose61;
-  launcher = (callPackage ../development/pharo { }).launcher;
+  pharo-vm = callPackage ../development/pharo/vm { };
+  pharo-launcher = callPackage ../development/pharo/launcher { };
 
   srecord = callPackage ../development/tools/misc/srecord { };
 

@@ -22,8 +22,8 @@ stdenv.mkDerivation rec {
   '';
   installPhase = ''
     mkdir -p $out/bin
-    cp pharo-vm.sh $out/bin/pharo-vm
-    chmod +x $out/bin/pharo-vm
+    cp pharo-vm.sh $out/bin/pharo
+    chmod +x $out/bin/pharo
   '';
   meta = {
     description = "Pharo virtual machine (multiple variants)";
